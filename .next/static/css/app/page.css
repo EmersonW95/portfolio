@@ -1,0 +1,358 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/page.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.page_hero__7KFOs {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 5rem) var(--gutter) 3rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-gap: 3rem;
+  gap: 3rem;
+  align-items: start;
+}
+
+.page_eyebrow__yxIK8 {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--signal);
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+.page_heroTitle__ixXIp {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  color: var(--paper);
+  margin-bottom: 1.1rem;
+}
+
+.page_heroLead__uZbgS {
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
+}
+
+.page_heroActions__uE8fj {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.page_primaryBtn__9q958,
+.page_ghostBtn__vQTUR {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.page_primaryBtn__9q958 {
+  background: var(--signal);
+  color: var(--ink-0);
+}
+
+.page_primaryBtn__9q958:hover {
+  background: #ff845c;
+}
+
+.page_ghostBtn__vQTUR {
+  border-color: var(--line);
+  color: var(--paper);
+}
+
+.page_ghostBtn__vQTUR:hover {
+  border-color: var(--paper-dim);
+}
+
+/* Title block, styled after an engineering-drawing info panel */
+.page_titleBlock__Alit0 {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.page_tbRow__wmp8k {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  border-bottom: 1px solid var(--line);
+}
+
+.page_tbRow__wmp8k:last-child {
+  border-bottom: none;
+}
+
+.page_tbLabel__5T2mA {
+  padding: 0.7rem 0.9rem;
+  font-size: 0.72rem;
+  color: var(--paper-dim);
+  border-right: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+}
+
+.page_tbValue__p5yjL {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.88rem;
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+}
+
+.page_tbAccent__o9sAj {
+  color: var(--ok);
+}
+
+.page_section__zQZ2o {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3rem var(--gutter);
+  border-top: 1px solid var(--line-soft);
+}
+
+.page_sectionHeading__lt74q {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.page_sectionCode__NkmWd {
+  color: var(--signal);
+  font-size: 0.85rem;
+}
+
+.page_sectionTitle__6ic_4 {
+  font-size: 1.4rem;
+  color: var(--paper);
+  white-space: nowrap;
+}
+
+.page_sectionRule__p6tTI {
+  height: 1px;
+  flex: 1 1;
+  background: var(--line);
+}
+
+.page_cardGrid__MgGN_ {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+}
+
+.page_card__Cf__u {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.4rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.page_projectCard__2LcUe {
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.page_projectCard__2LcUe:hover {
+  border-color: var(--signal-dim);
+  transform: translateY(-2px);
+}
+
+.page_cardHead__v_c2H {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page_cardCode__4b_OJ {
+  color: var(--signal);
+  font-size: 0.78rem;
+}
+
+.page_cardPeriod__Ag12_,
+.page_linkOut__4a0A4,
+.page_statusTag__VZ4FQ {
+  font-size: 0.72rem;
+  color: var(--paper-dim);
+}
+
+.page_statusTag__VZ4FQ {
+  color: var(--ok);
+  border: 1px solid var(--ok);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.page_cardTitle__T08IG {
+  font-size: 1.1rem;
+  color: var(--paper);
+}
+
+.page_tags__7IjXU {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.page_tag__t9Q6I {
+  font-size: 0.7rem;
+  color: var(--paper-dim);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.page_bullets__2ceJ9 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.page_bullets__2ceJ9 li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+  color: var(--paper-dim);
+}
+
+.page_bullets__2ceJ9 li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--signal);
+}
+
+.page_statusCard__J_CBU {
+  max-width: 620px;
+}
+
+.page_contactGrid__FcWqy {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.page_contactRow__t5CuZ {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  transition: background 0.15s ease;
+}
+
+.page_contactRow__t5CuZ:last-child {
+  border-bottom: none;
+}
+
+.page_contactRow__t5CuZ:hover {
+  background: var(--ink-2);
+}
+
+.page_footer__F3MD0 {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 2rem var(--gutter) 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--paper-dim);
+}
+
+@media (max-width: 800px) {
+  .page_hero__7KFOs {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./components/Nav.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+.Nav_bar__EPka2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11, 27, 46, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.Nav_inner__sh7uA {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0.9rem var(--gutter);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Nav_mark___p5rh {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--paper);
+}
+
+.Nav_markDot__uOOuy {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--signal);
+}
+
+.Nav_links__8Axcs {
+  display: flex;
+  gap: 1.75rem;
+  margin-left: auto;
+}
+
+.Nav_link__AQMuy {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--paper-dim);
+  transition: color 0.15s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.Nav_link__AQMuy:hover {
+  color: var(--paper);
+  border-bottom-color: var(--line);
+}
+
+.Nav_cta__gBZXl {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--signal);
+  border: 1px solid var(--signal-dim);
+  padding: 0.4rem 0.75rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.Nav_cta__gBZXl:hover {
+  background: var(--signal);
+  color: var(--ink-0);
+}
+
+@media (max-width: 720px) {
+  .Nav_links__8Axcs {
+    display: none;
+  }
+  .Nav_inner__sh7uA {
+    justify-content: space-between;
+  }
+}
+

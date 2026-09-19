@@ -1,0 +1,244 @@
+.page {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.5rem) var(--gutter) 4rem;
+}
+
+.intro {
+  max-width: 60ch;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--signal);
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--paper);
+  margin-bottom: 0.9rem;
+}
+
+.loading {
+  height: 40vh;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.75rem;
+}
+
+.boardCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-right: 1px solid var(--line);
+  padding-right: 1.5rem;
+}
+
+.gallows {
+  width: 100%;
+  max-width: 200px;
+}
+
+.frameLine {
+  stroke: var(--line);
+  stroke-width: 3;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 6 4;
+}
+
+.bodyPart {
+  stroke: var(--signal);
+  stroke-width: 4;
+  stroke-linecap: round;
+  fill: none;
+  transition: opacity 0.25s ease;
+}
+
+circle.bodyPart {
+  fill: transparent;
+}
+
+.remaining {
+  font-size: 0.85rem;
+  color: var(--paper-dim);
+}
+
+.remainingLow {
+  color: var(--bad);
+}
+
+.playCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--paper-dim);
+}
+
+.wordRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.letterSlot {
+  width: 2.1rem;
+  height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--line);
+}
+
+.letterChar {
+  font-size: 1.4rem;
+  color: var(--paper);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.bannerWin {
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid var(--ok);
+  color: var(--ok);
+}
+
+.bannerLose {
+  background: rgba(255, 93, 93, 0.1);
+  border: 1px solid var(--bad);
+  color: var(--bad);
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
+  gap: 0.4rem;
+  max-width: 480px;
+}
+
+.key {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--paper);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.key:hover:not(:disabled) {
+  border-color: var(--paper-dim);
+}
+
+.key:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.keyCorrect {
+  border-color: var(--ok);
+  color: var(--ok);
+}
+
+.keyWrong {
+  border-color: var(--bad);
+  color: var(--bad);
+}
+
+.triedRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.triedLabel {
+  font-size: 0.78rem;
+  color: var(--paper-dim);
+}
+
+.triedEmpty {
+  font-size: 0.78rem;
+  color: var(--paper-dim);
+}
+
+.triedList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.triedChip {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  border: 1px solid var(--line);
+}
+
+.triedChipOk {
+  color: var(--ok);
+  border-color: var(--ok);
+}
+
+.triedChipBad {
+  color: var(--bad);
+  border-color: var(--bad);
+}
+
+.resetBtn {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.6rem 1.1rem;
+  background: transparent;
+  border: 1px solid var(--signal-dim);
+  color: var(--signal);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.resetBtn:hover {
+  background: var(--signal);
+  color: var(--ink-0);
+}
+
+@media (max-width: 680px) {
+  .game {
+    grid-template-columns: 1fr;
+  }
+  .boardCol {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+}

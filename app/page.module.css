@@ -1,0 +1,267 @@
+.hero {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 5rem) var(--gutter) 3rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--signal);
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  color: var(--paper);
+  margin-bottom: 1.1rem;
+}
+
+.heroLead {
+  font-size: 1.05rem;
+  margin-bottom: 1.75rem;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.primaryBtn,
+.ghostBtn {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.primaryBtn {
+  background: var(--signal);
+  color: var(--ink-0);
+}
+
+.primaryBtn:hover {
+  background: #ff845c;
+}
+
+.ghostBtn {
+  border-color: var(--line);
+  color: var(--paper);
+}
+
+.ghostBtn:hover {
+  border-color: var(--paper-dim);
+}
+
+/* Title block, styled after an engineering-drawing info panel */
+.titleBlock {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.tbRow {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  border-bottom: 1px solid var(--line);
+}
+
+.tbRow:last-child {
+  border-bottom: none;
+}
+
+.tbLabel {
+  padding: 0.7rem 0.9rem;
+  font-size: 0.72rem;
+  color: var(--paper-dim);
+  border-right: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+}
+
+.tbValue {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.88rem;
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+}
+
+.tbAccent {
+  color: var(--ok);
+}
+
+.section {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 3rem var(--gutter);
+  border-top: 1px solid var(--line-soft);
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.sectionCode {
+  color: var(--signal);
+  font-size: 0.85rem;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  color: var(--paper);
+  white-space: nowrap;
+}
+
+.sectionRule {
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.4rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.projectCard {
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.projectCard:hover {
+  border-color: var(--signal-dim);
+  transform: translateY(-2px);
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardCode {
+  color: var(--signal);
+  font-size: 0.78rem;
+}
+
+.cardPeriod,
+.linkOut,
+.statusTag {
+  font-size: 0.72rem;
+  color: var(--paper-dim);
+}
+
+.statusTag {
+  color: var(--ok);
+  border: 1px solid var(--ok);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  color: var(--paper);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  color: var(--paper-dim);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+  color: var(--paper-dim);
+}
+
+.bullets li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--signal);
+}
+
+.statusCard {
+  max-width: 620px;
+}
+
+.contactGrid {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.contactRow {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  transition: background 0.15s ease;
+}
+
+.contactRow:last-child {
+  border-bottom: none;
+}
+
+.contactRow:hover {
+  background: var(--ink-2);
+}
+
+.footer {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 2rem var(--gutter) 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--paper-dim);
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

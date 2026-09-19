@@ -1,0 +1,79 @@
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11, 27, 46, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0.9rem var(--gutter);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mark {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  color: var(--paper);
+}
+
+.markDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--signal);
+}
+
+.links {
+  display: flex;
+  gap: 1.75rem;
+  margin-left: auto;
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--paper-dim);
+  transition: color 0.15s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.link:hover {
+  color: var(--paper);
+  border-bottom-color: var(--line);
+}
+
+.cta {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--signal);
+  border: 1px solid var(--signal-dim);
+  padding: 0.4rem 0.75rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.cta:hover {
+  background: var(--signal);
+  color: var(--ink-0);
+}
+
+@media (max-width: 720px) {
+  .links {
+    display: none;
+  }
+  .inner {
+    justify-content: space-between;
+  }
+}
